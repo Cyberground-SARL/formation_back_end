@@ -19,7 +19,7 @@ server.use(helmet());
 // connection to database
 const connectDB = require('./config/db')
 connectDB();
-const apiRoutes = require('./api')
+const apiRoutes = require('./api/routes/index.js')
 app.use("/api/v1", apiRoutes);
 server.listen(PORT, ()=>{
     console.log(`API IS RUNNING ON PORT ${PORT}`)

@@ -1,9 +1,7 @@
 const express = require("express");
 const router =express.Router();
-const { getTask, UpdateTask} = require('../controllers/index')
-const { setTask} = require('../controllers/index')
-const { DeleteTask} = require('../controllers/index')
-const { getOneTask} = require('../controllers/index')
+const { getTask, UpdateTask,setTask,DeleteTask ,getOneTask} = require('../controllers/index')
+
 
 
 router.get('/',getTask)
